@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Watches of America | VIP Access</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@300;700&display=swap" rel="stylesheet">
+    <style>
+        /* Основные стили */
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            background-color: #000;
+            color: #fff;
+            font-family: 'Montserrat', sans-serif;
+            overflow-x: hidden;
+        }
+
+        /* Задний фон с флагом в тумане */
+        .hero-bg {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: 
+                linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9)),
+                url('https://images.unsplash.com/photo-1508669232496-137b159c1cdb?q=80&w=2000&auto=format&fit=crop'); /* Эстетичный ч/б фон */
+            background-size: cover;
+            background-position: center;
+            filter: grayscale(100%) contrast(120%);
+            z-index: -1;
+            animation: subtleZoom 20s infinite alternate;
+        }
+
+        @keyframes subtleZoom {
+            from { transform: scale(1); }
+            to { transform: scale(1.1); }
+        }
+
+        /* Контент */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            min-height: 100vh;
+        }
+
+        .logo {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 2.5rem;
+            letter-spacing: 4px;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #fff;
+            display: inline-block;
+            padding-bottom: 5px;
+        }
+
+        h1 {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: clamp(3rem, 10vw, 6rem);
+            margin: 0;
+            line-height: 0.9;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            text-shadow: 0 0 20px rgba(0,0,0,0.5);
+        }
+
+        p.tagline {
+            font-size: 1.2rem;
+            font-weight: 300;
+            color: #ccc;
+            margin: 20px 0 40px;
+            letter-spacing: 2px;
+        }
+
+        /* Промокод блок */
+        .promo-box {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            padding: 30px;
+            margin: 0 auto 40px;
+            display: inline-block;
+            border-radius: 2px;
+        }
+
+        .promo-code {
+            display: block;
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 3rem;
+            color: #fff;
+            margin-bottom: 10px;
+        }
+
+        .promo-text {
+            text-transform: uppercase;
+            font-size: 0.9rem;
+            letter-spacing: 3px;
+            color: #aaa;
+        }
+
+        /* Кнопка */
+        .btn {
+            display: inline-block;
+            background: #fff;
+            color: #000;
+            padding: 20px 50px;
+            font-size: 1.2rem;
+            font-weight: 700;
+            text-decoration: none;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            transition: all 0.4s ease;
+            border: 2px solid #fff;
+        }
+
+        .btn:hover {
+            background: transparent;
+            color: #fff;
+            box-shadow: 0 0 30px rgba(255,255,255,0.3);
+        }
+
+        /* Футер */
+        footer {
+            margin-top: 50px;
+            font-size: 0.8rem;
+            color: #666;
+            letter-spacing: 1px;
+        }
+
+        /* Адаптивность */
+        @media (max-width: 768px) {
+            .promo-code { font-size: 2rem; }
+            .btn { width: 100%; box-sizing: border-box; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="hero-bg"></div>
+
+    <div class="container">
+        <div class="logo">WATCHES OF AMERICA</div>
+        
+        <h1>Timeless Legacy</h1>
+        <p class="tagline">PREMIUM TIMEPIECES. AMERICAN SPIRIT.</p>
+
+        <div class="promo-box">
+            <span class="promo-text">Use Exclusive VIP Code</span>
+            <span class="promo-code">VIPTIME</span>
+            <span class="promo-text">For 10% Off Your Order</span>
+        </div>
+
+        <div>
+            <a href="https://watchesofamerica.com/discount/VIPTIME?ref=hcaelgre" class="btn">Shop Collection Now</a>
+        </div>
+
+        <footer>
+            &copy; 2026 WATCHES OF AMERICA | SHIPPED FROM THE USA
+        </footer>
+    </div>
+
+</body>
+</html>
